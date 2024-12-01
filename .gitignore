@@ -1,0 +1,58 @@
+.idea/
+*.iml
+.gradle/
+/build/
+/target/
+.mvn/
+mvnw
+mvnw.cmd
+*.iws
+*.ipr
+*.mtw
+*.tmproj
+*.sln
+*.sw?
+out/
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.apk
+*.aar
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files #
+.classpath
+.project
+.settings
+.factorypath
+
+# Local Maven repository
+/.m2/repository
+
+# Mac files
+.AppleDouble
+Icon
+
+
+# External system files
+.nfs*
+
+hs_err_pid*
