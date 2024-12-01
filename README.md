@@ -23,34 +23,28 @@ This project is a RESTful API for processing payments. It provides endpoints for
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/paymentapi.git  // Replace with your actual repository URL
+   git clone https://github.com/pravinmandge/payment-api.git
    ```
 
-2. Navigate to the project directory:
-
-   ```bash
-   cd paymentapi
-   ```
-
-3. Build the project:
+2. Build the project:
 
    ```bash
    mvn clean install
    ```
 
-4. Run the application:
+3. Run the application:
 
    ```bash
    mvn spring-boot:run
    ```
 
-The application will start on port 8080 (or the port configured in your `application.properties`).
+The application will start on port 8080.
 
 
 ## API Endpoints
 
 * **User Management:**
-    * `POST /users`: Register a new user.  *(Requires authentication)*
+    * `POST /users`: Register a new user.  *(Open API)*
     * `POST /login`: User login (generates a JWT).
 
 * **Payment Transactions:**
@@ -67,3 +61,6 @@ The project uses an in-memory H2 database. You can configure a different databas
 ## Testing
 
 Unit and integration tests are planned but not yet implemented.  They will be located in the `src/test/java` directory.  Run tests using Maven:
+   ```bash
+   mvn test
+   ```
