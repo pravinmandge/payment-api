@@ -4,6 +4,7 @@ import com.example.paymentapi.dto.PaymentRequest;
 import com.example.paymentapi.entity.Transaction;
 import com.example.paymentapi.entity.User;
 import com.example.paymentapi.service.TransactionService;
+import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -24,7 +25,7 @@ public class PaymentController {
     }
 
     @PostMapping
-    public ResponseEntity<Transaction> makePayment(@AuthenticationPrincipal User user, @RequestBody PaymentRequest request) {
+    public ResponseEntity<Transaction> makePayment(@AuthenticationPrincipal User user, @Valid  @RequestBody PaymentRequest request) {
         log.info("Received payment request from user {}: {}", user.getEmail(), request); // Log request details
 
         Transaction transaction = transactionService.makePayment(user, request);

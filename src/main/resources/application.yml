@@ -19,5 +19,11 @@ spring:
 
 retry:
   max-attempts: 3
-  backoff:
-    delay: 100
+  backoff-delay: 2000
+
+
+logging:
+  level:
+    com:
+      example:
+        paymentapi: DEBUG

@@ -12,7 +12,8 @@ public enum ErrorCode {
     USER_NOT_FOUND(1006, "User not found with email"),
     DATABASE_ERROR(2001, "A database error occurred"),
     EXTERNAL_SERVICE_ERROR(2002, "An external service error occurred"),
-    GENERIC_ERROR(9999, "An unexpected error occurred");
+    GENERIC_ERROR(9999, "An unexpected error occurred"),
+    INVALID_ARGUMENT(9001, "Invalid argument");
 
     private final int code;
     private final String message;
